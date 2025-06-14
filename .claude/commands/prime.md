@@ -9,22 +9,38 @@ The client runs a fitness academy and has an old website that needs a complete v
 <instructions>
 <step_1_analyze_design>
 - First, examine the UI/UX folder in the root directory
-- Review all 5-6 images to understand the desired design aesthetic
+- Review all 5-6 images to understand the desired design aesthetic ONLY
 - Note key design elements: layout patterns, color schemes, typography, spacing, and component styles
-- These images show ONLY the design style, not the actual content
+- CRITICAL: These images show ONLY the design style and visual aesthetic - DO NOT use any text content, product names, or information from these images
+- The UI/UX images are purely for design reference - all actual content must come from the original website
 </step_1_analyze_design>
 
 <step_2_scrape_existing_site>
 - Use Puppeteer to access https://www.dfitacademy.com.au/
-- Systematically navigate through ALL pages of the website
+- Use WebFetch and WebSearch tools for comprehensive content extraction
+- Systematically navigate through ALL pages of the website using Puppeteer
+- MANDATORY: Map all category products by navigating to these specific routes:
+  1. https://www.dfitacademy.com.au/category/fitness-certification
+  2. https://www.dfitacademy.com.au/category/all-fitness-certifications  
+  3. https://www.dfitacademy.com.au/category/pet-certification
+  4. https://www.dfitacademy.com.au/category/workshop-ceu
+- For each category page:
+  - Use the left side navigation to identify ALL products in each category
+  - Extract complete product details (names, descriptions, pricing, features)
+  - Document the category structure and product hierarchy
+  - Map each product to its correct category for the new website
 - Extract and document in the AI_docs folder:
   - All text content (headings, descriptions, about info)
-  - Product/service names and details
-  - Pricing information
+  - Complete product catalog with category mappings
+  - Pricing information for all products
   - Class schedules or program structures
   - Contact information
+  - Navigation structure and menu items
   - Any other relevant content
-- Create organized markdown files for each section/page
+- Create organized markdown files:
+  - One file per category with all products listed
+  - One master product mapping file
+  - Individual files for each major page/section
 </step_2_scrape_existing_site>
 
 <step_3_build_new_website>
@@ -68,5 +84,8 @@ The client runs a fitness academy and has an old website that needs a complete v
 - No backend/database implementation needed
 - No login/authentication features required
 - Prioritize visual appeal while preserving all original content
-- Continue working until the entire website is complete
+- CRITICAL: Create accurate product category mapping from the original site's four main categories (fitness-certification, all-fitness-certifications, pet-certification, workshop-ceu)
+- UI/UX images are for DESIGN REFERENCE ONLY - never use content/text from these images
+- All products must be correctly categorized and accessible through proper navigation structure
+- Continue working until the entire website is complete with full product catalog
 </important_notes>
