@@ -24,9 +24,7 @@ export const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <div className="w-8 h-8 bg-[#C9F73A] rounded-full flex items-center justify-center">
-              <span className="text-black font-bold text-sm">D</span>
-            </div>
+            <img src="/logo.png" alt="D-FIT Academy" className="w-16 h-16 object-contain" />
             <span className="ml-2 text-xl font-bold text-gray-900">D-FIT Academy</span>
           </Link>
 
