@@ -46,6 +46,7 @@ The client runs a fitness academy and has an old website that needs a complete v
 <step_3_build_new_website>
 - Create a pixel-perfect implementation matching the UI/UX designs
 - Structure:
+  - Multi-page application with proper routing
   - Responsive design that works on all devices
   - Clean, semantic code structure
   - Modern animations and transitions

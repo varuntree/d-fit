@@ -1,0 +1,145 @@
+Below are the three deliverables you asked for. 
+(Download the CSV for item 1 here → **[DFit‑Services Catalog](sandbox:/mnt/data/dfit_services_catalog.csv)**)
+
+---
+
+\## 1. Complete service inventory  (CSV file)
+
+* **Contents** – every billable offer currently live on dfitacademy.com.au, grouped into four lines of business (PFT bundles, Career‑Track certifications, CEU workshops, Coaching plans).
+* **Fields** – category, product name, tier/variant, CEU‑credits or plan duration, sale price, regular price, high‑level inclusions.
+* **Coverage** – 100 % of the 34 distinct SKUs and subscription plans visible as at 15 Jun 2025 (24 CEU titles + 10 core programmes) ([dfitacademy.com.au][1], [dfitacademy.com.au][2], [dfitacademy.com.au][3])
+
+---
+
+\## 2. Brand assets to migrate or recreate
+
+| Asset type                                   | Where it appears                                                                                        | Notes / spec                                                                                           | Source                                                                                                                        |
+| -------------------------------------------- | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
+| **Primary logo** (`D‑Fit Academy` word‑mark) | Site header/footer, course cards                                                                        | Transparent PNG, \~220 × 65 px                                                                         | ([dfitacademy.com.au][2])                                                                                                     |
+| **IFPA affiliate banner**                    | Home hero & every product header                                                                        | 1560 × 535 px JPEG labelled `banner IFPA by D‑fit Academy`                                             | ([dfitacademy.com.au][2])                                                                                                     |
+| **NCCA accreditation seal**                  | Footer of all templates                                                                                 | Small PNG badge, dark on white                                                                         | ([dfitacademy.com.au][2])                                                                                                     |
+| **Hero background (“Certify Your Passion”)** | Home top section                                                                                        | Image ID `593EE012‑…` – keep for above‑the‑fold punch                                                  | ([dfitacademy.com.au][4])                                                                                                     |
+| **Programme header shots**                   | Basic PFT, Classic PFT, Premium PFT, Master PFT, Group Fitness, Medical Fitness                         | Each \~1200 × 800 px JPEG                                                                              | ([dfitacademy.com.au][5], [dfitacademy.com.au][6], [dfitacademy.com.au][7], [dfitacademy.com.au][8], [dfitacademy.com.au][9]) |
+| **CEU cover art**                            | 24 workshop product tiles                                                                               | Square 1 : 1 images; export originals for clarity                                                      | ([dfitacademy.com.au][2])                                                                                                     |
+| **Plan thumbnails**                          | Basic / Premium / One‑Time Boost coaching                                                               | Three lifestyle photos used in “Personalised Coaching & Nutrition” section                             | ([dfitacademy.com.au][4])                                                                                                     |
+| **Icon set**                                 | Social links, phone/mail/contact banners                                                                | Download SVGs from Wix media manager                                                                   |                                                                                                                               |
+| **Colour palette**                           | Brand navy #00224C, aqua accent #00C0C8, warm coral #FF5757 (sampled)                                   |                                                                                                        |                                                                                                                               |
+| **Typography**                               | Headers: Poppins Bold; body: Open Sans Regular                                                          |                                                                                                        |                                                                                                                               |
+| **Legal copy**                               | AQF disclaimer (“not nationally recognised qualifications in Australia”) + Privacy & Accessibility docs | Pull verbatim to new footer                                                                            | ([dfitacademy.com.au][4], [dfitacademy.com.au][10])                                                                           |
+| **Contact details**                          | Address, phone, email                                                                                   | 2/0 Eve St Guildford NSW · +61 423 446 134 · [info@dfitacademy.com.au](mailto:info@dfitacademy.com.au) | ([dfitacademy.com.au][4])                                                                                                     |
+
+> **Tip:** add alt‑text to every migrated image and embed SVGs for logos to keep load times low.
+
+---
+
+\## 3. Structured information architecture (page‑by‑page blueprint)
+
+\### Top‑level navigation
+`Home · Certifications · Career Tracks · CEU Library · Coaching · Pricing · About · Contact · Accreditation`
+
+---
+
+\### Home
+
+1. **Hero** – tagline “Certify Your Passion”, CTA “Explore Certifications”, IFPA banner, trust badges.
+2. **Why IFPA?** – 3‑column strip (Global recognition • NCCA accredited • Flexible online).
+3. **PFT Bundles** – card trio with “Compare Packages” button.
+4. **Career Tracks** – three feature cards.
+5. **CEU Spotlight carousel** – auto‑rotates six best‑selling workshops.
+6. **Coaching snapshot** – Basic / Premium / One‑Time Boost grid + “Book now”.
+7. **Testimonials slider** – three graduate quotes with head‑shots.
+8. **Accreditation strip** – IFPA + NCCA logos, AQF disclaimer.
+9. **Sticky footer CTA** – “Start your fitness career today”.
+
+---
+
+\### Certifications (PFT Bundles)
+
+* **Intro** – 60‑word value prop + accreditation note.
+* **Side‑by‑side comparison table** – rows for exam prep resources, live teaching, retest inclusion, validity, price.
+* **Accordion FAQ** – exam logistics, payment plans, renewal.
+* **CTA banner** – “Enroll in Basic / Classic / Premium”.
+
+---
+
+\### Career Tracks
+
+* Hero header with “Go from trainer to specialist”.
+* **Track matrix** – three rows (Master, Group, Medical), columns: included courses • duration • price • outcomes.
+* Graduate story video.
+* FAQ + CTA “Save \$819—Start now”.
+
+---
+
+\### CEU Library
+
+* Filter sidebar (Topic, Credits, Price).
+* Responsive grid of all 24–30 CEU titles; each card shows cover image, title, CEUs, price, “Add to cart”.
+* **Sort options** – Recommended · Price · CEUs · Alphabetical.
+* Search bar with live suggestions.
+
+---
+
+\### Coaching
+
+* Hero: “Personalised Coaching & Nutrition”.
+* **Plan cards + comparison table** – Basic \$59/mo, Premium \$99/mo, One‑Time Boost \$89 once.
+* Process timeline (Intake → Custom plan → Weekly check‑ins).
+* Success‑story gallery.
+* FAQ + “Book your coach” CTA.
+
+---
+
+\### Pricing
+
+* Multi‑tab interface: **Certifications · CEU · Coaching**.
+* Klarna/Afterpay messaging for instalments.
+* Early‑bird banner (auto hides when no sale).
+
+---
+
+\### About
+
+* Timeline (Dahanni Center → D‑Fit Academy → IFPA affiliate Australia).
+* Mission & values.
+* Instructor bios (photo, certs, fun fact).
+* Global map of IFPA recognition.
+
+---
+
+\### Accreditation (New)
+
+* Detailed explanation of IFPA & NCCA.
+* Clarify AQF status; guidance for Australian employers.
+* PDF links to sample certificate, code of ethics.
+
+---
+
+\### Contact
+
+* Interactive map.
+* Contact form (name, email, message).
+* Support hours, social links, accessibility info.
+
+---
+
+\### Global elements
+
+* **Header:** sticky, single‑row logo + nav + “Enroll Now” button.
+* **Footer:** logo, mini‑nav, contact, accreditation seals, legal links, newsletter signup.
+* **Checkout:** unified cart/checkout (use Wix Store only) with discount code field, trust badges, order summary.
+
+---
+
+This three‑part package (CSV service list, asset checklist, and content blueprint) gives you everything needed to populate the rebuilt site quickly, consistently, and without missing a detail.
+
+[1]: https://www.dfitacademy.com.au/category/pft-certifications?utm_source=chatgpt.com "Buy PFT CERTIFICATIONS Certification Online | D Fit Academy"
+[2]: https://www.dfitacademy.com.au/category/workshops-ceu "Buy WORKSHOPS CEU Certification Online | D Fit Academy"
+[3]: https://www.dfitacademy.com.au/pricing-plans/list?utm_source=chatgpt.com "Plans & Pricing - D-Fit Academy Australia (IFPA)"
+[4]: https://www.dfitacademy.com.au/?utm_source=chatgpt.com "Become certified personal. trainer | D-Fit Academy Australia (IFPA)"
+[5]: https://www.dfitacademy.com.au/product-page/basic-pft-1?utm_source=chatgpt.com "BASIC PFT | D Fit Academy"
+[6]: https://www.dfitacademy.com.au/product-page/classic-pft "CLASSIC PFT | D Fit Academy"
+[7]: https://www.dfitacademy.com.au/product-page/master-pft "MASTER PFT | D Fit Academy"
+[8]: https://www.dfitacademy.com.au/product-page/group-fitness-specialist-career "GROUP FITNESS SPECIALIST CAREER | D Fit Academy"
+[9]: https://www.dfitacademy.com.au/product-page/medical-fitness-specialist "MEDICAL FITNESS SPECIALIST | D Fit Academy"
+[10]: https://www.dfitacademy.com.au/accessibility-statement "Accessibility Statement | D Fit Academy"

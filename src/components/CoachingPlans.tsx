@@ -6,40 +6,38 @@ import { Check } from "lucide-react";
 export const CoachingPlans = () => {
   const plans = [
     {
-      name: "Basic",
-      price: "$199",
-      description: "Perfect for getting started with your fitness journey",
+      name: "Basic Support",
+      price: "$59",
+      period: "/month",
+      description: "Stay on Track With Structure",
       features: [
-        "Personalised workout plan",
-        "Basic nutrition guidelines",
-        "Email support",
-        "Monthly check-ins"
+        "4‑week Workout",
+        "Meal Plan Template", 
+        "Email Check‑in"
       ]
     },
     {
       name: "One-Time Boost",
-      price: "$399",
-      description: "Intensive coaching for rapid results",
+      price: "Contact",
+      period: "",
+      description: "Need a quick reset?",
       features: [
-        "Complete fitness assessment",
-        "Custom meal planning",
-        "Weekly video calls",
-        "Progress tracking tools",
-        "Supplement recommendations"
+        "Fully personalised plan",
+        "Workout + nutrition",
+        "30-minute Zoom call with coach"
       ],
       popular: true
     },
     {
-      name: "Premium",
-      price: "$599",
-      description: "Comprehensive coaching with ongoing support",
+      name: "Premium Support",
+      price: "$99",
+      period: "/month", 
+      description: "Total transformation",
       features: [
-        "Everything in One-Time Boost",
-        "Daily check-ins",
-        "24/7 WhatsApp support",
-        "Quarterly goal reassessment",
-        "Access to exclusive content",
-        "Priority booking"
+        "Custom Workout",
+        "Custom Meal Plan",
+        "2×/wk WhatsApp",
+        "Progress Adjustments"
       ]
     }
   ];
@@ -61,27 +59,27 @@ export const CoachingPlans = () => {
             <Card key={index} className={`relative ${plan.popular ? 'border-[#0060F0] shadow-lg scale-105' : ''}`}>
               {plan.popular && (
                 <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                  <span className="bg-[#A7E800] text-[#0D0D0D] px-4 py-1 rounded-full text-sm font-bold">
+                  <span className="bg-[#C9F73A] text-black px-4 py-1 rounded-full text-sm font-bold">
                     Most Popular
                   </span>
                 </div>
               )}
               <CardHeader className="text-center">
                 <CardTitle className="text-2xl font-bold text-[#0D0D0D]">{plan.name}</CardTitle>
-                <div className="text-4xl font-bold text-[#0060F0] mt-2">{plan.price}</div>
+                <div className="text-4xl font-bold text-[#C9F73A] mt-2">{plan.price}<span className="text-lg text-gray-600">{plan.period}</span></div>
                 <CardDescription className="text-muted-foreground">{plan.description}</CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3 mb-6">
                   {plan.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-center">
-                      <Check className="h-5 w-5 text-[#A7E800] mr-3 flex-shrink-0" />
+                      <Check className="h-5 w-5 text-[#C9F73A] mr-3 flex-shrink-0" />
                       <span className="text-muted-foreground">{feature}</span>
                     </li>
                   ))}
                 </ul>
                 <Button 
-                  className={`w-full ${plan.popular ? 'bg-[#0060F0] hover:bg-[#0050D0]' : 'bg-[#0D0D0D] hover:bg-[#0D0D0D]/80'} text-white`}
+                  className="w-full bg-[#C9F73A] hover:bg-[#B8E629] text-black"
                 >
                   Get Started
                 </Button>
